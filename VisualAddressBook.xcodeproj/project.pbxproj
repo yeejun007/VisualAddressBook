@@ -14,6 +14,8 @@
 		BB0D298624BD855A00DD4F96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0D298524BD855A00DD4F96 /* Assets.xcassets */; };
 		BB0D298924BD855A00DD4F96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0D298724BD855A00DD4F96 /* LaunchScreen.storyboard */; };
 		BB0D298C24BD855A00DD4F96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D298B24BD855A00DD4F96 /* main.m */; };
+		BB0D299624BD862B00DD4F96 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D299224BD862B00DD4F96 /* Book.m */; };
+		BB0D299724BD862B00DD4F96 /* BookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D299324BD862B00DD4F96 /* BookManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		BB0D298824BD855A00DD4F96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB0D298A24BD855A00DD4F96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB0D298B24BD855A00DD4F96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB0D299224BD862B00DD4F96 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		BB0D299324BD862B00DD4F96 /* BookManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookManager.m; sourceTree = "<group>"; };
+		BB0D299424BD862B00DD4F96 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		BB0D299524BD862B00DD4F96 /* BookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,10 @@
 		BB0D297824BD855800DD4F96 /* VisualAddressBook */ = {
 			isa = PBXGroup;
 			children = (
+				BB0D299424BD862B00DD4F96 /* Book.h */,
+				BB0D299224BD862B00DD4F96 /* Book.m */,
+				BB0D299524BD862B00DD4F96 /* BookManager.h */,
+				BB0D299324BD862B00DD4F96 /* BookManager.m */,
 				BB0D297924BD855800DD4F96 /* AppDelegate.h */,
 				BB0D297A24BD855800DD4F96 /* AppDelegate.m */,
 				BB0D297C24BD855800DD4F96 /* SceneDelegate.h */,
@@ -146,6 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB0D299724BD862B00DD4F96 /* BookManager.m in Sources */,
+				BB0D299624BD862B00DD4F96 /* Book.m in Sources */,
 				BB0D298124BD855800DD4F96 /* ViewController.m in Sources */,
 				BB0D297B24BD855800DD4F96 /* AppDelegate.m in Sources */,
 				BB0D298C24BD855A00DD4F96 /* main.m in Sources */,

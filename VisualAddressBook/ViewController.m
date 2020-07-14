@@ -15,6 +15,7 @@
 @end
 
 @implementation ViewController
+@synthesize resultTextView;
 
 // 이전에 콘솔에서 코딩할떄의 main 파일에 위치한 초기화 코드는 viewDidLoad에 넣어주면 된다
 - (void)viewDidLoad {
@@ -46,7 +47,10 @@
 }
 
 -(IBAction)showAllBookAction: (id)sender {
-    NSLog(@"showAllBookAction excuted");
+    // showAllBook이 리턴하는 값의 타입도 NSString이라서 이렇게 하는게 가능함
+    resultTextView.text = [myBook showAllBook];
+    // 아래와 같이 써도 됨
+//    [resultTextView setText:[myBook showAllBook]];
 }
 
 

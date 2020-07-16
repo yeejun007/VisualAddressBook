@@ -66,5 +66,16 @@
     
 }
 
+// 이거도 storybook 가서 함수와 버튼 컴포넌트를 이어주기 (Touch up inside: 버튼 눌렀을때 쑥 들어갔다가 나옴)
+-(IBAction)findBookAction: (id)sender {
+    // nameTextField에 들어와있는 값을 가져와서 책을 검색하도록 한다
+    NSString *strTemp = [myBook findBook: nameTextField.text];
+    if(strTemp != nil) {
+        resultTextView.text = strTemp;
+    }else {
+        resultTextView.text = @"찾으시는 책이 없네요..";
+    }
+}
+
 
 @end

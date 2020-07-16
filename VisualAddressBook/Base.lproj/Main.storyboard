@@ -89,6 +89,15 @@
                                     <action selector="addBookAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z5M-m1-wWm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPI-y1-h4x">
+                                <rect key="frame" x="158" y="243" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96620899438858032" green="0.76617075784117605" blue="0.33148311233878408" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="검색"/>
+                                <connections>
+                                    <action selector="findBookAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HYN-Ug-8nJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

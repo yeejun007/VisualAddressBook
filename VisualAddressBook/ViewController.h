@@ -17,6 +17,7 @@
 // showAllBook 메소드를 실행시키는 메소드 만들기 / IB = Interface Build
 -(IBAction)showAllBookAction: (id)sender;
 -(IBAction)addBookAction: (id)sender;
+-(IBAction)findBookAction: (id)sender;
 
 // textfield와 연결지을 메소드 만들기
 // 유저와의 상호작용을 통한 액션이 아니라, 단순히 어떤 UI 요소를 컨트롤 하고싶은 경우에 IBOutlet을 사용한다

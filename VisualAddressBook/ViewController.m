@@ -15,7 +15,7 @@
 @end
 
 @implementation ViewController
-@synthesize resultTextView;
+@synthesize resultTextView, nameTextField, genreTextField, authorTextField;
 
 // 이전에 콘솔에서 코딩할떄의 main 파일에 위치한 초기화 코드는 viewDidLoad에 넣어주면 된다
 - (void)viewDidLoad {
@@ -51,6 +51,19 @@
     resultTextView.text = [myBook showAllBook];
     // 아래와 같이 써도 됨
 //    [resultTextView setText:[myBook showAllBook]];
+}
+
+// 버튼에 이을 함수임. (Touch up inside로 함수와 버튼을 이어준다)
+-(IBAction)addBookAction: (id)sender {
+    // Book 클래스 하나 인스턴스화시켜서 dict 하나 만들기
+    Book *bookTemp = [[Book alloc]init];
+    bookTemp.name = nameTextField.text;
+    bookTemp.genre = genreTextField.text;
+    bookTemp.author = authorTextField.text;
+    
+    [myBook addBook:bookTemp];
+    resultTextView.text = @"책이 추가되었습니다";
+    
 }
 
 

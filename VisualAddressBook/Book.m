@@ -12,6 +12,7 @@
 @synthesize name, genre, author;
 
 -(void) bookPrint {
+    NSLog(@"--- Printing this object's book information ---");
     NSLog(@"Name : %@", name);
     NSLog(@"genre : %@", genre);
     NSLog(@"author : %@", author);

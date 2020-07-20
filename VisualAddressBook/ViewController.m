@@ -44,6 +44,9 @@
     [myBook addBook:book1];
     [myBook addBook:book2];
     [myBook addBook:book3];
+    
+    // countBook 함수가 리턴하는 integer 타입의 값을 문자 타입으로 변경시켜주고 countLabel에 넣는다
+    _countLabel.text = [NSString stringWithFormat: @"%li", [myBook countBook]];
 }
 
 -(IBAction)showAllBookAction: (id)sender {
@@ -62,6 +65,7 @@
     bookTemp.author = authorTextField.text;
     
     [myBook addBook:bookTemp];
+    _countLabel.text = [NSString stringWithFormat: @"%li", [myBook countBook]];
     resultTextView.text = @"책이 추가되었습니다";
     
 }
@@ -74,6 +78,21 @@
         resultTextView.text = strTemp;
     }else {
         resultTextView.text = @"찾으시는 책이 없네요..";
+    }
+}
+
+// 책 배열 안에 해당 책이 있으면 찾아서 삭제하는 함수
+-(IBAction)removeBookAction: (id)sender {
+    NSString *strTemp = [myBook removeBook: nameTextField.text];
+    if(strTemp != nil) {
+        // c에서는 + 연산 기호로 문자를 이을수가 없다
+        NSMutableString *str = [[NSMutableString alloc]init];
+        [str appendString: strTemp];
+        [str appendString: @" 책이 삭제되었습니다"];
+        _countLabel.text = [NSString stringWithFormat: @"%li", [myBook countBook]];
+        resultTextView.text = str;
+    }else {
+        resultTextView.text = @"지우려는 책이 없네요..";
     }
 }
 
